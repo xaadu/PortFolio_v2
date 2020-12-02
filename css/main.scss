@@ -41,6 +41,55 @@ body {
 }
 
 header {
+    .sideBar {
+        .leftBar,
+        .rightBar {
+            z-index: 10;
+            bottom: 0;
+            width: 40px;
+
+            li a i,
+            a {
+                color: $color-Light-Slate;
+                font-size: 1.16rem;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    color: $color-Green;
+                    transform: translateY(-3px);
+                }
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 90px;
+                margin: 0px auto;
+                background-color: $color-Light-Slate;
+            }
+        }
+        .leftBar {
+            left: 40px;
+
+            li {
+                padding: 11px;
+            }
+        }
+        .rightBar {
+            right: 40px;
+
+            a {
+                padding: 11px;
+                font-family: $font-mono;
+                font-size: 0.78rem;
+                writing-mode: vertical-lr;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+    
+
     nav {
         .navbar-brand-wrapper {
             background: $color-Green;
