@@ -38,9 +38,40 @@ $color-Green: #64ffda;
 
 body {
     background: $color-Navy;
+    font-family: $font-sans;
+    color: $color-Slate;
+}
+
+a {
+    color: $color-Green;
+    position: relative;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $color-Green;
+        transform: scaleX(0);
+        transform-origin: 0% 50%;
+        transition: transform .2s ease-in-out;
+    }
+
+    &:hover {
+        color: $color-Green;
+        
+        &::after {
+            transform: scaleX(1);
+            transform-origin: 0% 50%;
+        }
+    }
 }
 
 header {
+    min-height: 100vh;
     .sideBar {
         .leftBar,
         .rightBar {
@@ -215,6 +246,75 @@ header {
     }
 }
 
+section#aboutMe {
+    max-width: 930px;
+    margin: 170px auto;
+
+    .desc {
+        p {
+            font-size: 1.3rem;
+        }
+        ul {
+            columns: 2;
+
+            li {
+                font-family: $font-mono;
+                font-size: 0.86rem;
+
+                &::before {
+                    content: "▹";
+                    font-size: 1rem;
+                    padding: 12px;
+                    padding-left: 0;
+                    color: $color-Green;
+                }
+            }
+        }
+    }
+    .img {
+        position: relative;
+        transition: all .2s ease-in-out;
+
+        .imgBox {
+            &:hover {
+                &::after {
+                    transform: translate(-46%, 4%);
+                }
+                &::before {
+                    opacity: 0;
+                }
+            }
+    
+            &::after, &::before {
+                content: "";
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                top: 0;
+                left: 50%;
+                transform: translate(-44%, 6%);
+                border: 2px solid $color-Green;
+                border-radius: 5px;
+                transition: all .2s ease-in-out;
+                z-index: -1;
+            }
+            &::before {
+                transform: translateX(-50%);
+                border: none;
+                border-radius: 5px;
+                background: rgba($color-Green, .3);
+                z-index: 1;
+            }
+    
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
 
 // BUTTON
 .button {
@@ -226,5 +326,33 @@ header {
 
     &:hover {
         background: $color-Light-Navy;
+    }
+}
+
+// SECTION HEADING
+.sectionHeading h3 {
+    color: $color-Lightest-Slate;
+    font-family: $font-sans;
+    font-size: 2rem;
+    font-weight: 600;
+    overflow: visible;
+
+    .number {
+        color: $color-Green;
+        font-family: $font-mono;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    &::after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        top: -7px;
+        left: 30px;
+        width: 300px;
+        height: 1px;
+        background: $color-Lightest-Slate;
+        opacity: .3;
     }
 }
