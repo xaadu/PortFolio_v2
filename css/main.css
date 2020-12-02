@@ -201,6 +201,7 @@ header nav .navbar-brand-wrapper {
 }
 
 header nav .navbar-brand-wrapper .navbar-brand {
+  font-family: sans-serif;
   background: #0a192f;
   color: #64ffda !important;
   padding: 3px 9px;
