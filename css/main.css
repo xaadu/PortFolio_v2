@@ -84,6 +84,73 @@ header .sideBar .rightBar a {
   letter-spacing: 0.1rem;
 }
 
+header nav {
+  z-index: 11;
+  background: #0a192f;
+}
+
+header nav .navbar-toggler {
+  height: 60px;
+  width: 62px;
+  position: relative;
+}
+
+header nav .navbar-toggler:active, header nav .navbar-toggler:focus {
+  outline: none;
+  border: none;
+}
+
+header nav .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+header nav .navbar-toggler[aria-expanded=true] .navbar-toggler-icon::after {
+  top: 44%;
+  width: 30px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+header nav .navbar-toggler[aria-expanded=true] .navbar-toggler-icon::before {
+  display: none;
+}
+
+header nav .navbar-toggler .navbar-toggler-icon {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  width: 30px;
+  height: 2px;
+  background: #64ffda;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+header nav .navbar-toggler .navbar-toggler-icon::before, header nav .navbar-toggler .navbar-toggler-icon::after {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background: #64ffda;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+header nav .navbar-toggler .navbar-toggler-icon::before {
+  top: -500%;
+  width: 36px;
+}
+
+header nav .navbar-toggler .navbar-toggler-icon::after {
+  bottom: -500%;
+  width: 24px;
+}
+
 header nav .navbar-brand-wrapper {
   background: #64ffda;
   padding: 2px;
