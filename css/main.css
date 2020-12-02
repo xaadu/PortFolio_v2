@@ -193,15 +193,42 @@ header .hero .topSmall p {
   color: #64ffda;
 }
 
-header .hero .name h2 {
+header .hero .name h2,
+header .hero .shortDesc h2 {
   font-size: 5rem;
   font-weight: 600;
   color: #ccd6f6;
 }
 
+@media only screen and (max-width: 1200px) {
+  header .hero .name h2,
+  header .hero .shortDesc h2 {
+    font-size: 4.4rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header .hero .name h2,
+  header .hero .shortDesc h2 {
+    font-size: 3.6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .hero .name h2,
+  header .hero .shortDesc h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header .hero .name h2,
+  header .hero .shortDesc h2 {
+    font-size: 2rem;
+  }
+}
+
 header .hero .shortDesc h2 {
-  font-size: 5rem;
-  font-weight: 600;
   color: #a8b2d1;
 }
 
