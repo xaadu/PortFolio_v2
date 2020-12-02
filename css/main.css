@@ -229,6 +229,7 @@ header nav .nav-item a span, header nav .nav-item a:hover {
 
 header .hero {
   font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  min-height: 90vh;
 }
 
 header .hero .topSmall p {

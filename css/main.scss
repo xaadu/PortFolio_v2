@@ -209,6 +209,7 @@ header {
 
     .hero {
         font-family: $font-sans;
+        min-height: 90vh;
 
         .topSmall p {
             font-family: $font-mono;
