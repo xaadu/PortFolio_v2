@@ -29,12 +29,12 @@ body {
   color: #8892b0;
 }
 
-a {
+a.nL {
   color: #64ffda;
   position: relative;
 }
 
-a::after {
+a.nL::after {
   content: "";
   position: absolute;
   display: block;
@@ -53,11 +53,11 @@ a::after {
   transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
-a:hover {
+a.nL:hover {
   color: #64ffda;
 }
 
-a:hover::after {
+a.nL:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: 0% 50%;
@@ -287,7 +287,7 @@ header .hero a.button {
 
 section#aboutMe {
   max-width: 930px;
-  margin: 170px auto;
+  margin: auto;
 }
 
 section#aboutMe .desc p {

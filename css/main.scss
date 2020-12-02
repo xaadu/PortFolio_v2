@@ -42,7 +42,7 @@ body {
     color: $color-Slate;
 }
 
-a {
+a.nL {
     color: $color-Green;
     position: relative;
     
@@ -248,7 +248,7 @@ header {
 
 section#aboutMe {
     max-width: 930px;
-    margin: 170px auto;
+    margin: auto;
 
     .desc {
         p {
