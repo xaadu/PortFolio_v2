@@ -203,25 +203,25 @@ header .hero .shortDesc h2 {
 @media only screen and (max-width: 1200px) {
   header .hero .name h2,
   header .hero .shortDesc h2 {
-    font-size: 4.4rem;
+    font-size: 4.6rem;
   }
 }
 
 @media only screen and (max-width: 992px) {
   header .hero .name h2,
   header .hero .shortDesc h2 {
-    font-size: 3.6rem;
+    font-size: 3.8rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   header .hero .name h2,
   header .hero .shortDesc h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 360px) {
   header .hero .name h2,
   header .hero .shortDesc h2 {
     font-size: 2rem;
